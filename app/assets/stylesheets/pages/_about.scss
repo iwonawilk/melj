@@ -1,0 +1,68 @@
+#about-h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.about-main-box {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-around;
+  iframe {
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+  }
+}
+.about-description {
+  h2 {
+    color: green;
+    font-size: 45px;
+  }
+  h4 {
+    font-size: 30px;
+    font-weight: 300;
+  }
+}
+
+.employees {
+  background-color: white;
+  padding: 40px 0;
+  h2 {
+    color: green;
+    padding: 20px 0px;
+  }
+}
+
+.employee-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.employee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board-chair {
+  padding: 40px 0;
+  h2 {
+    color: green;
+    padding: 20px 0px;
+  }
+}
+
+
+.board-chair-text {
+  h4 {
+    font-size: 25px;
+    font-weight: 300;
+
+  }
+}
+
+// .board-chair-description {
+//   display: flex-wrap;
+//   justify-content: space-between;
+// }

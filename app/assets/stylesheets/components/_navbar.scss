@@ -1,0 +1,33 @@
+.navbar-melj {
+  display: flex;
+  justify-content: space-between;
+  background: green;
+  h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+  }
+  a {
+    color: white !important;
+    text-decoration: none;
+    &:hover{
+      color: #354047 !important;
+    }
+  }
+}
+
+.navbar-melj .navbar-collapse {
+  flex-grow: 0;
+}
+
+.nav-link {
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.sticky-top {
+  position: fixed-top;
+}
+

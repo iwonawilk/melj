@@ -1,0 +1,32 @@
+.events {
+  a {
+    font-weight: 40px;
+    text-decoration: none;
+    color: green;
+    &:hover{
+    color: #354047;
+    }
+  }
+  h1 {
+    color: green;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+  }
+}
+
+.event {
+  h1 {
+    color: green;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+  }
+}
