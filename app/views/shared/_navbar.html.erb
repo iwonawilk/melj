@@ -14,8 +14,19 @@
           <li class="nav-item">
             <%= link_to "ABOUT", about_path , class: "nav-link" %>
           </li>
+
           <li class="nav-item">
-            <%= link_to "PROGRAMS", programs_path, class: "nav-link" %>
+            <div class="dropdown show">
+              <a class="btn dropdown-toggle nav-link" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PROGRAMS</a>
+              <div class="dropdown-menu" >
+                <%= link_to "All programs", programs_path, class: "dropdown-item" %>
+                <a class="dropdown-item" href="#hope">Hope</a>
+                <a class="dropdown-item" href="#forreal">Forreal</a>
+                <a class="dropdown-item" href="#employment">Employment</a>
+                <a class="dropdown-item" href="#counseling">Counseling</a>
+                <a class="dropdown-item" href="#education">Education</a>
+              </div>
+            </div>
           </li>
           <li class="nav-item">
             <%= link_to "NEWS", news_path, class: "nav-link" %>
@@ -32,39 +43,3 @@
         </ul>
     </div>
 </div>
-
-<!-- <div class="navbar navbar-expand-lg navbar-melj sticky">
-  <%= link_to root_path, class: "navbar-brand" do %>
-    <h1>melj</h1>
-  <% end %>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-
-      <li class="nav-item active">
-        <%= link_to "Donate today!", "https://www.paypal.com/fundraiser/112574644767835624/charity/1747512", class: "nav-link" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "ABOUT", about_path , class: "nav-link" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "PROGRAMS", programs_path, class: "nav-link" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "NEWS", news_path, class: "nav-link" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "EVENTS", events_path, class: "nav-link" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "VIDEOS", videos_path, class: "nav-link" %>
-      </li>
-    </ul>
-  </div>
-</div>
-
- -->

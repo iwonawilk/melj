@@ -67,3 +67,19 @@
   justify-content: center;
   margin: 3vw 3vh;
 }
+
+.landing-news {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10vw 10vh;
+  color: white;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 80vh;
+  h1 {
+    color: red;
+  }
+}

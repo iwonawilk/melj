@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :videos
     resources :events
-    resources :admins
+    resources :admins, only: [:index]
   end
   get 'about', to: 'pages#about'
   get 'programs', to: 'pages#programs'
