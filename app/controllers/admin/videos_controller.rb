@@ -1,6 +1,7 @@
 class Admin::VideosController < ApplicationController
   before_action :find_video, only: [:edit, :update, :destroy]
   before_action :video_params, only: [:create, :update]
+  http_basic_authenticate_with name: ENV['ADMIN_NAME'], password: ENV['ADMIN_PASSWORD']
 
   def index
     @videos = Video.order(updated_at: :desc)
@@ -26,7 +27,6 @@ class Admin::VideosController < ApplicationController
   end
 
   def edit
-
   end
 
   def update

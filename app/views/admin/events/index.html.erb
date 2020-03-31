@@ -1,0 +1,17 @@
+<div class="banner2" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path "banner_events.jpg"%>')">
+  <div class="container banner-title">
+    <h1>ADMIN PAGE EVENTS</h1>
+  </div>
+</div>
+
+<div class="container">
+  <%= link_to "New Event", new_admin_event_path, class: "btn btn-success w-100 my-5" %>
+</div>
+
+<div class="container events">
+  <% @events.each do |event| %>
+    <%= link_to admin_event_path(event) do %>
+       <h2><%= event.title %></h2>
+    <% end %>
+  <% end %>
+</div>

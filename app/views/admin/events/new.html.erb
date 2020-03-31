@@ -1,0 +1,10 @@
+  <div class="form container my-5">
+  <%= simple_form_for(@event, url: admin_events_path) do |f| %>
+    <%= f.input :title %>
+    <%= f.input :description %>
+    <div class="d-flex">
+      <%= f.submit "Add Event", class: "btn btn-success w-50" %>
+      <%= link_to "Back", admin_events_path, class: "btn btn-primary w-50" %>
+    </div>
+  <% end %>
+</div>

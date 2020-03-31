@@ -1,0 +1,20 @@
+<div class="banner2" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path "banner_video.jpg" %>')">
+  <div class="container banner-title">
+    <h1>ADMIN PAGE VIDEO</h1>
+  </div>
+</div>
+<div class="container">
+  <%= link_to "New Video", new_admin_video_path, class: "btn btn-success w-100 my-5" %>
+</div>
+<div class="container videos flex-wrap">
+  <div class="video-title">
+    <% @videos.each do |video| %>
+    <div class="video">
+      <h2><%= video.title %></h2>
+      <iframe src="https://www.youtube.com/embed/<%= video.url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <%= link_to "Edit", edit_admin_video_path(video), class: "btn btn-primary" %>
+      <%= link_to "Delete", admin_video_path(video), method: :delete, url: admin_video_path(video), data: { confirm: "Are you sure?" }, class: 'btn btn-danger' %>
+    </div>
+    <% end %>
+  </div>
+</div>
