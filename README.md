@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+New version of http://www.melj.org/
+Written in Ruby on Rails.
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
+To run locally, execute the following command:
 
-* Configuration
+```
+  rails s
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
