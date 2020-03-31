@@ -9,10 +9,17 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <%= link_to "Donate today!", "https://www.paypal.com/fundraiser/112574644767835624/charity/1747512", class: "btn btn-success nav-link" %>
+            <%= link_to "Donate today!", "https://www.paypal.com/fundraiser/112574644767835624/charity/1747512", class: "btn btn-success nav-link", id: "btn-nav" %>
           </li>
           <li class="nav-item">
-            <%= link_to "ABOUT", about_path , class: "nav-link" %>
+            <div class="dropdown show">
+              <a class="btn dropdown-toggle nav-link" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ABOUT</a>
+              <div class="dropdown-menu" >
+                <%= link_to "About us", about_path, class: "dropdown-item" %>
+                <a class="dropdown-item" href="about#aboutemployees">Faces of MELJ</a>
+                <a class="dropdown-item" href="about#aboutlatreese">Latreese Cooke</a>
+              </div>
+            </div>
           </li>
 
           <li class="nav-item">
