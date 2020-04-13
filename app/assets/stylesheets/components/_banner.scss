@@ -1,20 +1,22 @@
 .banner {
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
+  display: flex;
+  align-items: center;
   h1 {
     margin: 0;
     color: white;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
-    font-size: 70px;
+    font-size: 65px;
     font-weight: bold;
     padding-top: 28vh;
   }
-  p {
+  h3 {
     color: white;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     padding-left: 5vw;
 
@@ -26,10 +28,11 @@
   background-position: center;
   height: 70vh;
   width: 100vw;
+  display: flex;
+  align-items: center;
   h1 {
     color: white;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-    font-size: 70px;
     font-weight: bold;
   }
 }
@@ -43,15 +46,13 @@
   h2 {
     padding-top: 15vh;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-    font-size: 50px;
     font-weight: bold;
   }
   h3 {
-    font-size: 20px;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   }
 }
 
-.banner-title {
-  padding-top: 30vh;
-}
+// .banner-title {
+//   padding-bottom: 20vh;
+// }

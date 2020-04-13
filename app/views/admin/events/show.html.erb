@@ -1,6 +1,6 @@
 <div class="container event my-5">
   <h1><%= @event.title %></h1>
-  <h2><%= @event.description %></h2>
+  <h3><%= @event.description %></h3>
   <div class="d-flex">
     <%= link_to "Edit", edit_admin_event_path(@event), class: "btn btn-success w-50" %>
     <%= link_to "Delete", admin_event_path(@event), method: :delete, url: admin_event_path(@event), data: { confirm: "Are you sure?" }, class: 'btn btn-danger w-50' %>

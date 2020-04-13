@@ -1,15 +1,13 @@
 .landing-welcome {
   padding: 10vw 0;
-  h3 {
+  h1 {
     color: green;
     font-weight: bold;
-    font-size: 50px;
     text-align: center;
   }
 }
 
 .landing-about-box {
-  height: 60vh;
   display: flex;
   justify-content: space-around;
 }
@@ -27,7 +25,6 @@
 }
 
 .landing-donate-box {
-  height: 85vh;
   padding: 10vw 10vh;
   color: green;
   h2 {
@@ -41,9 +38,7 @@
 .landing-donate {
   display: flex;
   justify-content: space-around;
-
   padding: 5vh;
-  font-size: 35px;
   a {
     text-decoration: none;
     font-weight: bold;
@@ -52,11 +47,6 @@
     }
   }
 }
-
-// .landing-donate-c {
-//   text-align: center;
-//   // padding: 5vh;
-// }
 
 .image-donate {
   width: 200px;
@@ -71,16 +61,36 @@
 
 .landing-news {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-around;
   padding: 10vw 10vh;
   color: white;
-  text-align: center;
   background-size: cover;
   background-position: center;
   width: 100vw;
-  height: 90vh;
+}
+
+.landing-news-img {
+  display: flex;
+  align-items: center;
+}
+
+.landing-news-info {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   h1 {
     color: red;
+  }
+}
+
+.landing-subscribe {
+  padding: 10vw 0;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    color: green;
+    font-weight: bold;
+    text-align: center;
   }
 }
