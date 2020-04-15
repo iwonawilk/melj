@@ -9,20 +9,20 @@
   }
   h1 {
     color: green;
-    font-style: normal;
     font-weight: 900;
   }
 }
 
 .event {
+  padding-top: 40px;
   h1 {
     color: green;
-    font-style: normal;
     font-weight: 900;
     text-align: center;
+    padding-bottom: 40px;
   }
   h3 {
-    text-align: center;
+    text-align: justify;
     font-style: normal;
     font-weight: 300;
   }

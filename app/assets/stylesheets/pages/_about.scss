@@ -1,23 +1,24 @@
-#about-h3 {
+#a-h3 {
   font-style: normal;
   font-weight: 600;
 }
 
-.about-main-box {
+.a-description {
   padding: 40px 0;
   display: flex;
   justify-content: space-around;
+  text-align: justify;
   iframe {
     width: 100%;
     height: 50vh;
     align-items: center;
   }
 }
-.about-description {
+.a-main-box {
   padding-top: 40px;
+  text-align: justify;
   h2 {
     color: green;
-    text-align: center;
   }
   h4 {
     font-weight: 300;
@@ -30,7 +31,7 @@
   h2 {
     color: green;
     padding: 20px 0px;
-    text-align: center;
+    text-align: justify;
   }
 }
 
@@ -51,16 +52,16 @@
   h2 {
     color: green;
     padding: 20px 0px;
-    text-align: center;
+    text-align: justify;
   }
 }
 
 .board-chair-text {
-  padding-top: 20px;
   h4 {
-    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-weight: 300;
-    text-align: center;
+    text-align: justify;
   }
 }
 
@@ -70,6 +71,5 @@
   iframe {
     width: 100%;
     height: 100%;
-    align-items: center;
   }
 }

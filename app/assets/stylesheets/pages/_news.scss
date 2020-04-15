@@ -1,14 +1,14 @@
 .news-title {
-  padding: 40px 0;
   h3 {
     font-style: normal;
     font-weight: 300;
-    text-align: center
+    text-align: justify;
   }
 }
 
 .news {
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
   text-align: center;
   display: flex;
   align-items: center;

@@ -1,5 +1,5 @@
 <div class="banner2" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path "banner_video.jpg" %>')">
-  <div class="container banner-title">
+  <div class="container">
     <h1>VIDEO</h1>
   </div>
 </div>
@@ -8,7 +8,7 @@
   <div class="video-title">
     <% @videos.each do |video| %>
     <div class="video">
-      <h2><%= video.title %></h2>
+      <h3><%= video.title %></h3>
       <iframe src="https://www.youtube.com/embed/<%= video.url %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <% end %>
