@@ -7,21 +7,20 @@
   color: white;
   position: static;
   bottom: 0px;
-  h1 {
+  h3 {
     font-style: normal;
-    font-size: 25px;
+    font-weight: 200;
   }
 }
 
 .footer-main {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .sponsor-img {
-  height: 90px;
-  width: 90px;
+  height: 50px;
+  width: 50px;
   margin: 5px;
 }
 
@@ -30,13 +29,7 @@
   align-items: start;
   justify-content: space-around;
   padding-bottom: 20px;
-  a {
-    color: green;
     font-size: 40px;
-    &:hover{
-    color: white;
-  }
-  }
 }
 
 .contact {
@@ -44,11 +37,22 @@
   p {
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+  }
+}
+
+
+.link {
+  a {
+    text-decoration: none;
+    color: white;
+    &:hover{
+    color: green;
+    }
   }
 }
 
 .footer-copyright {
-  padding: 20px 0;
-  text-align: center;
+  padding-top: 10px;
+  font-size: 0.7rem;
+  text-align: right;
 }
