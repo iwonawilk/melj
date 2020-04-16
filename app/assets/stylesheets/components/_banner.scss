@@ -42,16 +42,17 @@
 .banner3 {
   background-size: cover;
   background-position: center;
-  min-height: 35vh;
   text-align: center;
   color: white;
   align-items: center;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   h2 {
-    padding-top: 10vh;
     font-weight: bold;
+    padding: 5vh;
+  align-items: center;
+
   }
   h3 {
-    padding-bottom: 5vh;
+    padding: 0 5vh 5vh 5vh;
   }
 }

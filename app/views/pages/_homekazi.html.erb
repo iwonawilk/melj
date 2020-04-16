@@ -1,14 +1,12 @@
-<div class="col-sm-12 col-12 landing-news flex-wrap" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path "banner_news.jpg" %>')">
+<div class="landing-news" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path "banner_news.jpg" %>')">
 
-  <div></div>
-  <div class="landing-news-img">
-    <a href="https://www.mixcloud.com/todd-engle/wednesday-wake-up-call-with-latreese/"><%= image_tag "kazi.png", class: "my-5" %></a>
-  </div>
-  <div class="col-sm-6 col-12 landing-news-info">
+  <div class="container landing-news-info">
     <h3>TUNE IN EVERY FIRST THURSDAY OF THE MONTH</h3>
     <h3>[9-10 AM]</h3>
-    <h2>IRON SHARPENS IRON</h2>
-    <h1>88.7 FM</h1>
-    <%= link_to 'MORE NEWS', news_path, class: "btn btn-success w-100"%>
+    <h3>IRON SHARPENS IRON</h3>
+    <h2><a href="https://www.mixcloud.com/todd-engle/wednesday-wake-up-call-with-latreese/">88.7 FM</a></h2>
+  </div>
+  <div class="container btn-center">
+    <%= link_to 'MORE NEWS', news_path, class: "btn btn-success w-50"%>
   </div>
 </div>

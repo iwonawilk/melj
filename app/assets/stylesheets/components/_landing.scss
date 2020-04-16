@@ -1,11 +1,10 @@
 .landing-welcome {
   padding-top: 10vw;
   padding-bottom: 10vw;
-  h1 {
+  h2 {
     color: green;
     font-weight: bold;
     text-align: center;
-    font-size: 2em;
   }
 }
 
@@ -56,18 +55,12 @@
 }
 
 .landing-news {
-  display: flex;
-  justify-content: space-around;
-  padding: 10vw 10vh;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
   color: white;
   background-size: cover;
   background-position: center;
   width: 100vw;
-}
-
-.landing-news-img {
-  display: flex;
-  align-items: center;
 }
 
 .landing-news-info {
@@ -75,10 +68,15 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  h1 {
+  a {
+    text-decoration: none;
     color: red;
+    &:hover{
+    color: gray;
+    }
   }
 }
+
 
 .landing-subscribe {
   padding-top: 10vw;
