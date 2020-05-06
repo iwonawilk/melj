@@ -27,7 +27,7 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'autoprefixer-rails'
 gem 'bootsnap', '>= 1.4.2', require: false
-gem 'bootstrap', '~> 4.0.0'
+gem 'bootstrap', '~> 4.3.1'
 gem 'bootstrap-sass'
 gem 'carrierwave'
 gem 'cloudinary'
