@@ -60,6 +60,10 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
+  CarrierWave.configure do |config|
+    config.cache_storage = :file
+  end
+
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
@@ -72,5 +76,4 @@ Rails.application.configure do
     authentication: 'plain',
     enable_starttls_auto: true
   }
-
 end
