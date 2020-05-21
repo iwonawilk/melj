@@ -1,7 +1,7 @@
 <h2>CONTACT US TODAY:</h2>
 <div class="contact-form">
 
-  <%= form_for @contact, url: email_index_path, remote: true do |f| %>
+  <%= form_for @contact, url: contact_index_path, remote: true do |f| %>
       <div class="form-group">
         <%= f.label :name %>
         <%= f.text_field :name, required: true, class: "form-control mb-3" %>

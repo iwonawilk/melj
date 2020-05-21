@@ -12,5 +12,5 @@ Rails.application.routes.draw do
   get 'index.html.var', to: 'pages#home'
   resources :events, only: [:index, :show]
   resources :videos, only: [:index]
-  resources :email, only: [:index, :new, :create]
+  resources :contact, only: [:index, :new, :create]
 end
