@@ -1,10 +1,11 @@
 class ContactController < ApplicationController
   def index
-    @contact = Contact.new(params[:email])
+    @contact = Contact.new(params[:contact])
   end
 
   def create
-    @contact = Contact.new(params[:email])
+    @contact = Contact.new(params[:contact])
+
     @contact.request = request
     respond_to do |format|
       if @contact.deliver
