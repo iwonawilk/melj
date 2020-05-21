@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   get 'programs', to: 'pages#programs'
   get 'news', to: 'pages#news'
+  get 'index.html.var', to: 'pages#home'
   resources :events, only: [:index, :show]
   resources :videos, only: [:index]
   resources :email, only: [:index, :new, :create]
