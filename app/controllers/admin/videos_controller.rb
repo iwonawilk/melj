@@ -8,8 +8,13 @@ class Admin::VideosController < ApplicationController
     for i in 0... (@videos.length)
       video = @videos[i]
       query = URI(video.url).query
-      params = CGI::parse(query)
-      video.url = params['v'][0]
+      if query.nil?
+        path = URI(video.url).path
+        video.url = path[1..path.length]
+      else
+        params = CGI::parse(query)
+        video.url = params['v'][0]
+      end
     end
   end
 
