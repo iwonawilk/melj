@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   resources :events, only: [:index, :show]
   resources :videos, only: [:index]
   resources :contact, only: [:index, :new, :create]
+  resources :assistance, only: [:index, :new, :create]
 end

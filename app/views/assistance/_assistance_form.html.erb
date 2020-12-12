@@ -1,0 +1,36 @@
+<h2>COMPLETE THE FORM:</h2>
+<div class="contact-form">
+
+  <%= form_for @assistance, url:  assistance_index_path, remote: true do |f| %>
+      <div class="form-group">
+        <%= f.label :name %>
+        <%= f.text_field :name, required: true, class: "form-control mb-3" %>
+        <%= f.label :email %>
+        <%= f.text_field :email, required: true, class: "form-control mb-3" %>
+        <%= f.label :phone %>
+        <%= f.text_field :phone, required: true, class: "form-control mb-3" %>
+        <%= f.label "Alternate contact (trusted adult)" %>
+        <%= f.text_area :alternatecontact, required: true, class: "form-control mb-3" %>
+        <%= f.label "Street address (if applicable)" %>
+        <%= f.text_area :address, required: true, class: "form-control mb-3" %>
+        <%= f.label :county %>
+        <%= f.text_area :county, required: true, class: "form-control mb-3" %>
+        <%= f.label "How did you hear of us?" %>
+        <%= f.text_area :hearfrom, required: true, class: "form-control mb-3", placeholder: "Facebook, Twitter, Instagram, Newsletter, Other" %>
+        <%= f.label "Are you asking for assistance on behalf of someone, or asking for yourself?" %>
+        <%= f.text_area :forwho, required: true, class: "form-control mb-3" %>
+        <%= f.label "Have you been incarcerated? If so, what for?" %>
+        <%= f.text_area :incarcerated, required: true, class: "form-control mb-3" %>
+        <%= f.label "Is there a program we offer that you are specifically interested in?" %>
+        <%= f.text_area :program, required: true, class: "form-control mb-3" %>
+        <%= f.label "What do you need assistance with?" %>
+        <%= f.text_area :helpwith, required: true, class: "form-control mb-3", placeholder: "EX: housing, substance abuse, making your car payment" %>
+        <%= f.submit 'Submit the form', class: 'btn btn-success'%>
+      </div>
+  <% end %>
+
+  <div class="col-md-6" id="flash-message">
+    <%= render 'flash' %>
+  </div>
+
+</div>
