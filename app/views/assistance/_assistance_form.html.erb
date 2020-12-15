@@ -25,6 +25,8 @@
         <%= f.text_area :program, required: true, class: "form-control mb-3" %>
         <%= f.label "What do you need assistance with?" %>
         <%= f.text_area :helpwith, required: true, class: "form-control mb-3", placeholder: "EX: housing, substance abuse, making your car payment" %>
+        <%= f.label "How much money are you requesting and who do you need to pay it to?" %>
+        <%= f.text_area :money, required: true, class: "form-control mb-3", placeholder: "EX: If you are asking for help in paying a utility bill, please provide the dollar amount and name of the utility company you owe." %>
         <%= f.submit 'Submit the form', class: 'btn btn-success'%>
       </div>
   <% end %>
