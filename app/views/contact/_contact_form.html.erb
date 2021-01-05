@@ -1,4 +1,10 @@
 <h2>CONTACT US TODAY:</h2>
+<div class="d-inline-flex align-items-center">
+  <p>If you are contacting us about financial assistance, please use our financial assistance form at the link provided: </p>
+  <div class="pl-1">
+    <%= link_to "FORM", assistance_index_path, class: "btn btn-success"%>
+  </div>
+</div>
 <div class="contact-form">
 
   <%= form_for @contact, url: contact_index_path, remote: true do |f| %>
