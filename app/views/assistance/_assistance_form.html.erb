@@ -27,6 +27,9 @@
         <%= f.text_area :helpwith, required: true, class: "form-control mb-3", placeholder: "EX: housing, substance abuse, making your car payment" %>
         <%= f.label "How much money are you requesting and who do you need to pay it to?" %>
         <%= f.text_area :money, required: true, class: "form-control mb-3", placeholder: "EX: If you are asking for help in paying a utility bill, please provide the dollar amount and name of the utility company you owe." %>
+        <%= f.label "Do you have a bank account that can receive Zelle? If not, do you utilize Cashapp?" %>
+        <%= f.text_area :bank, required: true, class: "form-control mb-3"%>
+        <p>Financial aid request does not guarantee assistance.  Assistance is based on need, funds available and whether you qualify for our assistance program.</p>
         <%= f.submit 'Submit the form', class: 'btn btn-success'%>
       </div>
   <% end %>

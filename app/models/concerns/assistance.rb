@@ -11,6 +11,7 @@ class Assistance < MailForm::Base
   attribute :program, validate: true
   attribute :helpwith, validate: true
   attribute :money, validate: true
+  attribute :bank, validate: true
 
   # Declare the e-mail headers. It accepts anything the mail method
   # in ActionMailer accepts.
