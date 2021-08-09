@@ -287,7 +287,7 @@ DEPENDENCIES
   mimemagic!
   pg (>= 0.18, < 2.0)
   popper_js
-  puma (~> 5.4.0)
+  puma
   rails (~> 6.0.2, >= 6.0.2.1)
   sass-rails (>= 6)
   simple_form
