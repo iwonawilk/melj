@@ -28,7 +28,7 @@ gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dab
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'autoprefixer-rails'
-gem 'bootsnap', '>= 1.7.5', require: false
+gem 'bootsnap', '>= 1.7.5'
 gem 'bootstrap', '~> 4.0.0'
 gem 'bootstrap-sass'
 gem 'carrierwave'
